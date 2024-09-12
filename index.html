@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+
+    <!--Nav-->
+
+    <nav>
+        <input type="checkbox" id="navcheck">
+        <label for="navcheck" class="navcheckbtn">
+            <i class='fa fa-bars'></i>
+        </label>
+        <label class="logo">Kalkulator Bangun Datar</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!--Main-->
+
+    <main>
+       
+      <div class="row ">
+          <br>
+      
+              <button class="filter active" id="showall"> Show all</button>
+              <button class="filter" id="segi3"> Segitiga</button>
+              <button class="filter" id="jajar"> Jajar Genjang</button>
+            
+            </div>
+       
+        
+              <!--SEGITIGA-->
+            <!--LUAS SEGITIGA -->
+      
+  
+      <div class="row segitiga">
+      
+            <div class="column">
+                <div class="cardName">
+                  <p>Luas Segitiga</p>
+                </div>
+                <div class="card">
+                  <img src="images/3.png" alt="luas segitiga" class="images-card">
+
+                  <br><br>
+                  <p>Rumus Luas Segitiga</p>
+                  <h2>L = (a x t) x 0.5</h2>
+                  <div class="ket">
+                    <p>Diketahui:</p>
+                    <p>L = Luas</p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                  </div>
+                 
+                  <form >
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai Alas" id="alassegitiga"  autocomplete="off">
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai Tinggi" id="tinggisegitiga"  autocomplete="off">
+                    <br><br><br><br>
+
+                    <h4>! Hasil Luas Segitiga !</h4>
+                    <input class="inputHasil" id="rumusluassegitiga" type="text" name="luas" disabled="true"/>
+                    <input class="inputHasil" id="luassegitiga" type="text" name="luas" disabled="true"/>
+
+                    <input value="Calculate" class="buttonSub" onClick="hitungluassegitiga()" type="button"></input>
+                    <button type="reset" class="buttonCanl">Reset</button>
+                  </form>
+
+                
+               
+          
+                
+                </div>
+
+                
+              </div>
+
+              <!--KELILING SEGITIGA-->
+            
+              <div class="column">
+                <div class="cardName">
+                  <p>Keliling Segitiga</p>
+                </div>
+                <div class="card">
+                  <img src="images/6.png" alt="keliling segitiga" class="images-card">
+
+                  <br><br>
+                  <p>Rumus Keliling Segitiga</p>
+                  <h2>K = S1 + S2 + S3</h2>
+                  <div class="ket">
+                    <p>Diketahui:</p>
+                    <p>S1 = Sisi A</p>
+                    <p>S2 = Sisi B</p>
+                    <p>S3 = Sisi C</p>
+                  </div>
+
+
+                  <form >
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai A" id="nilaiasegitiga"  autocomplete="off">
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai B" id="nilaibsegitiga"  autocomplete="off">
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai C" id="nilaicsegitiga"  autocomplete="off">
+
+                    <h4>! Hasil Keliling Segitiga !</h4>
+                    <input class="inputHasil" id="rumuskelsegitiga" type="text" name="keliling" disabled="true"/>
+                    <input class="inputHasil" id="kelsegitiga" type="text" name="keliling" disabled="true"/>
+
+                    <input value="Calculate" class="buttonSub" onClick="hitungkelsegitiga()" type="button"></input>
+                    <button type="reset" class="buttonCanl">Reset</button>
+                  </form>
+
+                
+
+                </div>
+              </div>
+
+        </div>
+ 
+     
+
+        
+                <!--JAJAR GENJANG-->
+              <!--LUAS JAJAR GENJANG-->
+        <div class="row jajargenjang">
+              <div class="column">
+                <div class="cardName">
+                  <p>Luas Jajar Genjang</p>
+                </div>
+                <div class="card">
+                  <img src="images/7.png" alt="luas jajargenjang" class="images-card">
+
+                  <br><br>
+                  <p>Rumus Luas Jajar Genjang</p>
+                  <h2>L = a x t</h2>
+                  <div class="ket">
+                    <p>Diketahui:</p>
+                    <p>L = Luas</p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = Tinggi</p>
+                  </div>
+                 
+                 <form >
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai Alas"  id="alasjgenjang" autocomplete="off">
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai Tinggi" id="miringjgenjang" autocomplete="off">
+                    
+                    <h4>! Hasil Luas Jajar Genjang !</h4>
+                    <input class="inputHasil" id="rumusluasjg" type="text" name="luasjg" disabled="true"/>
+                    <input class="inputHasil" id="luasjgg" type="text" name="luasjg" disabled="true"/>
+
+                    <input type="button" value="Calculate" class="buttonSub" onClick="hitungluasjgenjang()"></input>
+                    <button type="reset" class="buttonCanl">Reset</button>
+                </form>
+
+                </div>
+              </div>
+
+              <!--KELILING JAJAR GENJANG-->
+            
+              <div class="column">
+                <div class="cardName">
+                  <p>Keliling Jajar Genjang</p>
+                </div>
+                <div class="card">
+                  <img src="images/8.png" alt="keliling jajargenjang" class="images-card">
+
+                  <br><br>
+                  <p>Rumus keliling Jajar Genjang</p>
+                  <h2>K = 2 (a+m)</h2>
+                  <div class="ket">
+                    <p>Diketahui:</p>
+                    <p>K = Keliling</p>
+                    <p>a = Alas</p>
+                    <p>m = Sisi Miring</p>
+                  </div>
+
+                <form>
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai Alas" id="alaskeljgenjang" autocomplete="off">
+                    <input class="inputNilai" type="number" placeholder="Tulis Nilai Sisi Miring" id="miringkeljgenjang" autocomplete="off">
+                  
+                    <h4>! Hasil Luas Jajar Genjang !</h4>
+                    <input class="inputHasil" id="rumuskeljg" type="text" name="keljg" disabled="true"/>
+                    <input class="inputHasil" id="keljgg" type="text" name="keljg" disabled="true"/>
+
+                    <input type="button" value="Calculate" class="buttonSub" onClick="hitungkeljgenjang()"></input>
+                    <button type="reset" class="buttonCanl">Reset</button>
+                </form>
+                </div>
+              </div>
+
+             
+
+        </div>
+
+    </main>
+    
+ 
+    
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
